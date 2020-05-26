@@ -9,7 +9,20 @@ First line of the input contains two integers X and K separated by a single spac
 Output:
 
 Print the largest number formed in a single line."""
-#SOLUTION
+#EFFICIENT CODE:
+x,k=input().split()
+k=int(k)
+l=list(x)
+st=""
+i=0
+while i<k:
+    if l[i]!='9':
+        l[i]='9'
+    else:
+        k+=1
+    i+=1
+print("".join(l))
+# my SOLUTION
 x,k=input().split()
 k=int(k)
 st=""
