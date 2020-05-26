@@ -1,0 +1,8 @@
+"""FITTING CIRCLES IN A GIVEN L,B"""
+t=int(input())
+for _ in range(t):
+    l,b=map(int,input().split())
+    if l>b or l==b:
+        print(l//b)
+    elif b>l:
+        print(b//l)
